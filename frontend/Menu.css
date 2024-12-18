@@ -15,13 +15,13 @@
 
 
 body {
-    font-family: MontserratBold;
     margin: 0;
     padding: 0;
     background-color: #FBF7EC;
 }
 
 header {
+    font-family: MontserratBold;
     background-color: rgba(97, 56 ,42, 0.43);
     text-align: center;
     position: sticky;
