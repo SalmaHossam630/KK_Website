@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7EC;
+}
+header {
+    font-family: MontserratBold;
+    background-color: rgba(97, 56, 42, 0.43);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    transition: top 0.3s;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    height: 100px;
+}
+.delivery-banner {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #445240;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 40px;
+    align-items: center;
+}
+h3 {
+    font-size: 12px;
+    color: #FBF7EC;
+    white-space: nowrap;
+    padding: 0 2rem;
+    letter-spacing: 1px;
+    animation: move-rtl 6000ms linear infinite;
+}
+@keyframes move-rtl {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+main {
+    background: url("assets/kk story bg.png") ;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(252,247,235, 0.7);
+    min-height: 70vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding-bottom: 500px;
+
+   
+    
+}
+
+.content-container {
+    padding: 30px;
+    max-width: 900px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    text-align: center;  
+    margin-bottom: -250px;
+}
+
+.section-title {
+   font-family: 'Canva Sans', sans-serif;
+    color: #445240;
+    font-size: 82.7px;
+    margin-top: 40px;
+    margin-left: -1000px;
+    align-items: left; 
+    justify-content: left;
+    text-align: left;
+}
+
+.section-subtitle {
+    font-size: 57.1px;
+    font-family: 'Canva Sans', sans-serif;
+    color: #41523e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    font-family: 'Canva Sans', sans-serif;
+    font-size: 23.6px; 
+    color: #472f1c;
+    line-height: 2.5; 
+    margin-top: 20px; 
+    font-weight: bold;
+    text-align: center;
+}
+.section-text1 {
+    font-family: 'Canva Sans', sans-serif;
+    font-size: 23.6px; 
+    color: #472f1c;
+    line-height: 1.9;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+
+
+footer {
+    margin-top: -170px;
+    bottom: 0;
+    background-color: rgb(68, 82, 64);
+    font-family: 'Canva Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+
+.subscribe-container {
+    text-align: center;
+    color: #fff;
+    margin-left: 15%;
+}
+
+.subscribe-title {
+    margin-bottom: 30px;
+    margin-left: 35px;
+    font-size: 27.9px;
+    font-weight: bold;
+    color:#fcf7eb;
+    font-family: 'Canva Sans', sans-serif;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.input-container:hover {
+    transform: scale(1.05);
+}
+
+.email-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.email-input:focus {
+    border-color: #ffffff; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); 
+}
+
+.arrow {
+    position: absolute ;
+    right: 15px;
+    top: 30%;
+    transform: translateY(-10%);
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow:hover {
+    color: #ffffff; 
+    transform: scale(1.2); 
+}
+.image{
+    background-image:url("assets/kk logo.png");
+    margin-top:30px;
+    transform: scale(2);
+    margin-left: -50px;
+    height:100px;
+    width: 150px;
+    background-size:200px ;
+    filter: brightness(9) saturate(70%) sepia(90%) hue-rotate(40deg) contrast(1.2);
+    
+}
+
+
+.social-icons {
+    display: flex;
+    margin-bottom:-80px;
+    margin-left: 650px;
+   
+    
+}
+
+.social-icons a {
+    color: #fff;
+    padding: 20px;
+    margin: 0px 1px; 
+    font-size: 3rem; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.social-icons a:hover {
+    color: #fff; 
+    transform: scale(1.2); 
+  
+}
