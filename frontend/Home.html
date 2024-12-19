@@ -6,6 +6,23 @@
     <title>Home</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="C:\website\Home.css">
+    <script>
+    const video = document.getElementById('myVideo');
+        const image = document.getElementById('myImage');
+        const intervalTime = 200; // 2 ثانية
+        
+        function toggleElements() {
+            if (video.paused) {
+                video.play();
+                image.style.display = 'none';
+            } else {
+                video.pause();
+                image.style.display = 'block';
+            }
+        }
+        
+        setInterval(toggleElements, intervalTime);
+        </script>
 </head>
 <body>
     <header>
@@ -20,32 +37,77 @@
             <a href="#"><i class="fa fa-bars"></i></a>
             <a href="log_in.html" target="_blank"><i class="fa fa-user"></i></a>
             <a href="#"><i class="fas fa-shopping-basket"></i></a>
-        <img src="C:\website\logo.png" alt="">
+            <a href="#"><i class="fa fa-search"></i></a>
+        <img src="assets/logo.png" alt="">
         </div>
         <div class="nav">
-            <img src="C:\website\Home1.png" alt="">
+            
+            <video class="my-video" autoplay loop muted >
+                <source src="assets/WhatsApp Video 2024-12-18 at 13.42.13_1ec01ff1.mp4" type="video/mp4">
+                <source src="assets/WhatsApp Video 2024-12-18 at 13.42.13_1ec01ff1.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+              </video>
+              <img class="my-img" src="assets/Home1.png" alt="">
         </div>
         <div class="nav2">
-            <img src="C:\website\Home4.png" alt="">
+            <img src="assets/Home4.png" alt="">
             <a href="#" class="button"><span>KK STORE</span></a>
             <video  autoplay loop muted >
-                <source src=" WhatsApp Video 2024-12-18 at 13.08.23_1ba8b6a9.mp4" type="video/mp4">
-                <source src="WhatsApp Video 2024-12-18 at 13.08.23_1ba8b6a9.ogg" type="video/ogg">
+                <source src="assets/WhatsApp Video 2024-12-18 at 13.08.23_1ba8b6a9.mp4" type="video/mp4">
+                <source src="assets/WhatsApp Video 2024-12-18 at 13.08.23_1ba8b6a9.ogg" type="video/ogg">
                 Your browser does not support HTML video.
               </video>
               
         </div>
-        <div class="nav3">
-            <img src="C:\website\Home6.png" alt="">
-            
-        </div>
-        <div class="nav4">
-            <img src="C:\website\Home55.png" alt="">
-        </div>
-        
     </header>
+        <section>
+            <h1>Koffee</h1>
+            <div class="box">
+                <div class="card">
+                    <a href="cart.html" target="_blank">
+                    <img src="assets/product1.jpg"  alt="">
+                    <p>BRAZIL - SUL DE MINAS</p>
+                    <h4>LE 350.00 EGP</h4>
+                </a>
+                </div>
+                <div class="card">
+                    <a href="cart.html" target="_blank">
+                    <img src="assets/product2.jpg" alt="">
+                    <p>COLOMBIA - ANTIOQUI</p>
+                    <h4>LE 300.00 EGP</h4>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <a href="cart.html" target="_blank">
+                    <img src="assets/product3.jpg" alt="">
+                    <p>ETHIOPIA - OROMOA</p>
+                    <h4>LE 300.00 EGP</h4>
+                </a>
+                </div>
+            </div>
+        </section>
+        <main>
+            <h1>KK MERCH</h1>
+            <div class="box2">
+                <div class="card2">
+                    <a href="cart.html" target="_blank">
+                    <img src="assets/product4.jpg"  alt="">
+                    <p>BRAZIL - SUL DE MINAS</p>
+                    <h4>LE 350.00 EGP</h4>
+                </a>
+                </div>
+                <div class="card2">
+                    <a href="cart.html" target="_blank">
+                    <img src="assets/product5.jpg" alt="">
+                    <p>COLOMBIA - ANTIOQUI</p>
+                    <h4>LE 300.00 EGP</h4>
+                    </a>
+                </div>
+            </div>
+        </main>
     <footer>
-        <img src="C:\website\logo.png" alt="">
+        <img src="assets/logo.png" alt="">
         <div class="bottom">
             <label for="mms" >subscribe to our email
                 <input type="email" id="mms" placeholder="Email">
