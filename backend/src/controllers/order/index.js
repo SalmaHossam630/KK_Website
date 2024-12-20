@@ -1,6 +1,5 @@
 const express = require("express")
-const User = require('../../models/user')
-const bcrypt =require("bcrypt")
+const User = require('../../models/order')
 const mongoose = require('mongoose')
 // const mongouri = "mongodb://localhost:27017/lab1db"
 // app service 
@@ -127,7 +126,7 @@ app.post('/login',  async (req, res) => {
 
 mongoose.set("strictQuery", false)
 mongoose
-.connect('mongodb+srv://salmamedhat570:imdxCp2NJ5V4ueXJ@cluster0.t74qs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+.connect('')
 .then(() => {
     console.log('connected to MongoDB')
     //listen on specific port 
