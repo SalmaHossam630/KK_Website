@@ -181,7 +181,7 @@ main{
 .background {
     width: 100%;
     height: 900px; 
-    background-image: url('image/Screenshot\ 2024-12-21\ 031925.png');
+    background-image: url('assets/Screenshot\ 2024-12-21\ 031925.png');
     background-size:contain; 
     background-position: center; 
     margin-bottom: 20px; 

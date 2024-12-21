@@ -22,7 +22,7 @@ header {
     padding-top: 60px;
     padding-bottom: 20px;
     height: 70px;
-    z-index: 1000000px;
+    z-index: 1000;
 }
 
 .delivery-banner {
@@ -265,7 +265,7 @@ footer {
     margin-top: 100px;
     bottom: 0;
     background-color: rgb(68, 82, 64);
-    font-family: 'Canva Sans', sans-serif;
+    font-family: MontserratBold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,7 +275,7 @@ footer {
 
 .subscribe-container {
     text-align: center;
-    color: #fff;
+    color: #fcf7eb;
     margin-left: 15%;
 }
 
@@ -307,7 +307,7 @@ footer {
     outline: none;
     font-size: 1rem;
     background-color: transparent;
-    color: #fff;
+    color: #fcf7eb;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -316,7 +316,7 @@ footer {
 }
 
 .email-input:focus {
-    border-color: #ffffff; 
+    border-color: #fcf7eb; 
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); 
 }
 
@@ -334,11 +334,11 @@ footer {
 }
 
 .arrow:hover {
-    color: #ffffff; 
+    color: #fcf7eb; 
     transform: scale(1.2); 
 }
 .image{
-    background-image:url("images/kk logo.png");
+    background-image:url("assets/kk\ logo.png");
     margin-top:30px;
     transform: scale(2);
     margin-left: -50px;
