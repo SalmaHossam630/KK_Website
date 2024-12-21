@@ -127,7 +127,7 @@ app.post('/login',  async (req, res) => {
 
 mongoose.set("strictQuery", false)
 mongoose
-.connect('mongodb+srv://salmamedhat570:imdxCp2NJ5V4ueXJ@cluster0.t74qs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+// .connect('')
 .then(() => {
     console.log('connected to MongoDB')
     //listen on specific port 

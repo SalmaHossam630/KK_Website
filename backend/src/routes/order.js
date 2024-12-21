@@ -10,4 +10,3 @@ router.put('/upateOrder', order.put);
 router.delete('/order/:userID', order.deleteById);
 
 export default router;
-
