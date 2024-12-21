@@ -1,0 +1,210 @@
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../components/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url(../components/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(../components/fonts/Montserrat-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: MontserratBold;
+  margin: 0;
+  padding: 0;
+  background-color: #FBF7EC;
+}
+
+header {
+  font-family: MontserratBold;
+  background-color: rgba(97, 56, 42, 0.43);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  transition: top 0.3s;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  height: 70px;
+}
+
+.delivery-banner {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #445240;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  z-index: 1000;
+}
+
+.delivery-banner p {
+  font-size: 12px;
+  color: #FBF7EC;
+  white-space: nowrap;
+  padding: 0 2rem;
+  letter-spacing: 1px;
+  animation: move-rtl 6s linear infinite;
+}
+
+@keyframes move-rtl {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+header .user ul {
+  list-style: none;
+}
+
+header .user ul li {
+  position: relative;
+  float: right;
+}
+
+header .user ul li a:hover svg {
+  fill: #deae98;
+  transform: scale(1.2);
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+header nav {
+  background-color: transparent;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  position: relative;
+  float: left;
+}
+
+header nav ul li a {
+  font-size: 27px;
+  display: flex;
+  justify-content: flex-start;
+  height: 70px;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #445240;
+}
+
+header nav ul li a:hover {
+  color: #deae98;
+  transition: color 0.3s;
+  transform: scale(1.02);
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.shop-list:hover {
+  color: #deae98;
+  transition: color 0.3s;
+}
+
+.shop-list:hover svg {
+  fill: #deae98;
+  transition: fill 0.3s;
+}
+
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: transparent;
+  display: none;
+}
+
+.side-bar li ul {
+  position: relative;
+  right: 0;
+  width: 200px;
+  background: #FBF7EC;
+  display: none;
+}
+
+header nav ul li ul li {
+  width: 100%;
+  border-bottom: 1px solid rgba(97, 56, 42, 0.43);
+}
+
+header nav ul li:focus-within>ul,
+header nav ul li:hover>ul {
+  display: initial;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 1000;
+  background-color: #fbf7ec90;
+  backdrop-filter: blur(10px);
+  ;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.side-bar li {
+  width: 100%;
+}
+
+.side-bar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+main {
+  margin-top: 0;
+  padding: 0;
+}
+
+main .menu {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #445240;
+  height: 150px;
+}
+
+@media(max-width: 800px) {
+  .hideOnSmallScreen {
+      display: none;
+  }
+
+  .menu-button {
+      display: block;
+  }
+}

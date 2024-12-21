@@ -1,0 +1,110 @@
+.footer {
+  margin-top: -170px;
+  bottom: 0;
+  background-color: rgb(68, 82, 64);
+  font-family: 'Canva Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+}
+
+.subscribe-container {
+    text-align: center;
+    color: #fff;
+    margin-left: 15%;
+}
+
+.subscribe-title {
+    margin-bottom: 30px;
+    margin-left: 35px;
+    font-size: 27.9px;
+    font-weight: bold;
+    color:#fcf7eb;
+    font-family: 'Canva Sans', sans-serif;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.input-container:hover {
+    transform: scale(1.05);
+}
+
+.email-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-input:placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.email-input:focus {
+    border-color: #ffffff; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); 
+}
+
+.arrow {
+    position: absolute ;
+    right: 15px;
+    top: 30%;
+    transform: translateY(-10%);
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow:hover {
+    color: #ffffff; 
+    transform: scale(1.2); 
+}
+.image{
+    background-image:url("assets/kk logo.png");
+    margin-top:30px;
+    transform: scale(2);
+    margin-left: -50px;
+    height:100px;
+    width: 150px;
+    background-size:200px ;
+    filter: brightness(9) saturate(70%) sepia(90%) hue-rotate(40deg) contrast(1.2);
+    
+}
+
+
+.social-icons {
+    display: flex;
+    margin-bottom:-80px;
+    margin-left: 650px;
+   
+    
+}
+
+.social-icons a {
+    color: #fff;
+    padding: 20px;
+    margin: 0px 1px; 
+    font-size: 3rem; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.social-icons a:hover {
+    color: #fff; 
+    transform: scale(1.2); 
+  
+}

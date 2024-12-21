@@ -1,0 +1,162 @@
+header {
+  font-family: MontserratBold;
+  background-color: rgba(109, 174, 179, 0.33);
+  text-align: center;
+  position: absolute;
+  top: 0%; 
+left:70%;
+  transition: top 0.6s;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  height: 50px;
+  width:100%;
+}
+
+.delivery-banner {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #445240;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  z-index: 1000;
+}
+
+.delivery-banner p {
+  font-size: 12px;
+  color: #FBF7EC;
+  white-space: nowrap;
+  padding: 0 2rem;
+  letter-spacing: 1px;
+  animation: move-rtl 6s linear infinite;
+}
+
+@keyframes move-rtl {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+header .user ul {
+  list-style: none;
+}
+
+header .user ul li {
+  position: relative;
+  float: right;
+}
+
+header .user ul li a:hover svg {
+  fill: #deae98;
+  transform: scale(1.2);
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+header nav {
+  background-color: transparent;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  position: relative;
+  float: left;
+}
+
+header nav ul li a {
+  font-size: 27px;
+  display: flex;
+  justify-content: flex-start;
+  height: 70px;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color:rgb(97, 195, 70);
+}
+
+header nav ul li a:hover {
+  color:rgb(167, 105, 76);
+  transition: color 0.3s;
+  transform: scale(1.02);
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.shop-list:hover {
+  color:rgb(92, 167, 126);
+  transition: color 0.3s;
+}
+
+.shop-list:hover svg {
+  fill: #deae98;
+  transition: fill 0.3s;
+}
+
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: transparent;
+  display: none;
+}
+
+.side-bar li ul {
+  position: relative;
+  right: 0;
+  width: 200px;
+  background:rgb(251, 236, 238);
+  display: none;
+}
+
+header nav ul li ul li {
+  width: 100%;
+  border-bottom: 1px solid rgba(237, 133, 98, 0.43);
+}
+
+header nav ul li:focus-within>ul,
+header nav ul li:hover>ul {
+  display: initial;
+}
+
+.side-bar {
+  position: fixed;
+  top: 60%;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 1000;
+  background-color:rgba(211, 13, 63, 0.56);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  
+}
+
+.side-bar li {
+  width: 100%;
+  padding: 20px;
+
+}
+
+.side-bar a {
+  width: 100%;
+  
+}
+
+.menu-button {
+  display: none;
+position:absolute;
+}
