@@ -188,11 +188,11 @@ section {
 }
 
 section img {
-  width: 270px;
+  width: 400px;
   height: auto;
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 20%;
   margin: auto;
 
 }

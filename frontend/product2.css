@@ -179,16 +179,6 @@ header nav ul li:hover>ul {
   width: 100%;
 }
 
-/* section{
-    width: 100%;
-    height: auto;
-    padding: 20px 0;
-  }
-  section img{
-    position:absolute ;
-    top: 50%;
-    left: 30%;
-  } */
 section {
   width: 400px;
   height: 500px;
@@ -198,11 +188,11 @@ section {
 }
 
 section img {
-  width: 400px;
+  width: 270px;
   height: auto;
   position: absolute;
   top: 30%;
-  left: 20%;
+  left: 25%;
   margin: auto;
 
 }
@@ -210,7 +200,7 @@ section img {
 section p {
 
   font-weight: bold;
-  color: black;
+  color: #deae98;
   position: absolute;
   top: 350px;
   left: 70%;
@@ -219,11 +209,10 @@ section p {
 }
 
 section h1 {
+  font-family: MontserratBold;
   display: flex;
   flex-direction: column;
-  font-weight: bolder;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #445240;
   font-size: xx-large;
   letter-spacing: 5px;
   position: absolute;
@@ -256,7 +245,7 @@ section h3 {
   padding: 10px 20px;
   border: 2px solid #445240;
   border-radius: 5px;
-  background-color: #f5f5f5;
+  background-color: #FBF7EC;
   color: #333;
   font-size: 16px;
   text-align: center;
@@ -264,20 +253,18 @@ section h3 {
 }
 
 .size-label:hover {
-  background-color: #04AA6D;
-  /* Green */
-  color: white;
+  background-color: #445240;
+  color: #FBF7EC;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .size-input {
   display: none;
-  /* إخفاء زر الراديو */
 }
 
 .size-input:checked+.size-label {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #445240;
+  color: #FBF7EC;
   border: none;
 }
 
@@ -312,8 +299,8 @@ form h3 {
   border-radius: 25px;
   background-color: #f0eeee;
   ;
-  border: 0.5px solid rgb(20, 70, 20);
-  color: rgb(20, 70, 20);
+  border: 0.5px solid #445240;
+  color: #445240;
   text-align: center;
   font-size: 28px;
   padding: 10px;
@@ -469,7 +456,7 @@ footer {
 }
 
 
-@media(max-width: 400px) {
+@media(max-width: 800px) {
   .hideOnSmallScreen {
     display: none;
   }

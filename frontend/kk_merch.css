@@ -359,7 +359,7 @@ footer {
 }
 
 .social-icons a {
-    color: #fff;
+    color: #FBF7EC;
     padding: 20px;
     margin: 0px 1px; 
     font-size: 3rem; 
@@ -367,7 +367,17 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #fff; 
+    color: #FBF7EC; 
     transform: scale(1.2); 
   
 }
+
+@media(max-width: 400px) {
+    .hideOnSmallScreen {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  }
