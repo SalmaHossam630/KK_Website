@@ -106,13 +106,13 @@ app.get("/products/search", async (req, res) => {
 
 app.get("/products/search-by-category", async (req, res) => {
     try {
-        const { category } = req.query; // Extract the 'category' query parameter
+        const { category } = req.query; 
 
         if (!category) {
             return res.status(400).json({ message: "Category query parameter is required" });
         }
 
-        // Search for products by category (case-insensitive)
+      
         const products = await Product.find({ category :category});
 
         if (products.length === 0) {
