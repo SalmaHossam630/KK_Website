@@ -1,8 +1,12 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const Review = require('./models/review'); 
-
-const app = express();
+const express = require("express")
+const Review = require('../../models/review')
+const mongoose = require('mongoose')
+// const mongouri = "mongodb://localhost:27017/lab1db"
+// app service 
+const app = express()
+// this is to body
+app.use(express.json())
+app.use(express.urlencoded({extended: false}))
 
 app.post('/reviews', async (req, res) => {
   const { productId, userId, rating, comment } = req.body;
@@ -21,17 +25,6 @@ app.post('/reviews', async (req, res) => {
     res.status(500).json({ message: 'Failed to create review' });
   }
 });
-
-app.get('/products/:productId/reviews', async (req, res) => {
-  try {
-    const reviews = await Review.find({ product: req.params.productId });
-    res.json(reviews);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Failed to fetch reviews' });
-  }
-});
-
 mongoose.set("strictQuery", false)
 mongoose
 // .connect('')
