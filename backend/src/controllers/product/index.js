@@ -104,6 +104,28 @@ app.get("/products/search", async (req, res) => {
     }
 });
 
+app.get("/products/search-by-category", async (req, res) => {
+    try {
+        const { category } = req.query; // Extract the 'category' query parameter
+
+        if (!category) {
+            return res.status(400).json({ message: "Category query parameter is required" });
+        }
+
+        // Search for products by category (case-insensitive)
+        const products = await Product.find({ category :category});
+
+        if (products.length === 0) {
+            return res.status(404).json({ message: `No products found in category "${category}"` });
+        }
+
+        res.status(200).json(products);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
+
 
 mongoose.set("strictQuery", false)
 mongoose

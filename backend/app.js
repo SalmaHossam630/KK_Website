@@ -1,6 +1,6 @@
 const express = require("express")
 const mongoose = require('mongoose')
-const User = require('./models/user.model')
+const User = require('./src/models/usermodel')
 const bcrypt =require("bcrypt")
 
 // const mongouri = "mongodb://localhost:27017/lab1db"
